@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: #14213D; */
+    background: rgb(29,20,61);
+    background: linear-gradient(90deg, rgba(29,20,61,1) 21%, rgba(119,124,144,1) 74%, rgba(11,26,179,1) 100%);
+}
+
+nav{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    align-items: center;
+}
+
+.nav-head {
+    position: relative;
+    color: white;
+    text-decoration: none; /* Remove the default underline */
+    font-family: inconsolata;
+    font-size: 1.75rem;
+    font-weight: 500;
+    transition: color 0.4s ease-in-out;
+    text-decoration-color: black;
+}
+
+.nav-head::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px; /* Adjust the height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: #e5e5e5;
+    transition: width 0.75s ease-in-out;
+}
+
+.nav-head:hover {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.nav-head:hover::after {
+    width: 100%;
+}
+
+.nav-head::after {
+    width: 0;
+    transition: width 0.75s ease-in-out;
+}
+
+.toggle-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    float: right;
+}
+
+.main-sec{
+    display: flex;
+    justify-content:space-evenly;
+    background: rgb(29,20,61);
+    background: linear-gradient(90deg, rgba(29,20,61,1) 21%, rgba(119,124,144,1) 74%, rgba(11,26,179,1) 100%);
+    align-items: center;
+    height: 80vh;
+}
+
+
+
+ img{
+    border-radius: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    width: 45vw;
+}
+
+.d-block{
+    border-radius: 5%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    height: 65vh;
+    width: 45vw;
+}
+
+.intro{
+    width: 27rem;
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    text-align: center;
+    height: 16rem;
+}
+
+h1{
+    font-family: inconsolata;
+}
+
+p{
+    margin-top: 1.5rem;
+}
+
+#grades{
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.table{
+    margin-top: -2rem;
+    line-height: 7rem;
+    font-family: Montserrat;
+    background-color: #000000;
+}
+
+#edu-table{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 1.2rem;
+}
+
+#random{
+    width: 98.75vw;
+    height: 2rem;
+    background: rgb(29,20,61);
+    background: linear-gradient(90deg, rgba(29,20,61,1) 21%, rgba(119,124,144,1) 74%, rgba(11,26,179,1) 100%);
+    margin-top: -2rem;
+}
+
+#up-btn {
+    position: fixed;
+    bottom: 1rem; /* Adjust this value to place it higher or lower */
+    right: 1rem;  /* Adjust this value to place it more to the left or right */
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    background-color: #007bff; /* Optional: Add a background color */
+    padding: 0.5rem 1rem; /* Optional: Add some padding */
+    border-radius: 0.25rem; /* Optional: Add rounded corners */
+    z-index: 10;
+}
+
+
+#projs{
+    margin-top: 3rem;
+    text-align: center;
+    color: #d3ee04;
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+}
+
+.carousel-item img {
+    margin-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-family: Montserrat;
+}
+
+
+
+.experience{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    margin-top: -1rem;
+    height: 90vh;
+}
+#text-exp{
+    margin-top: 5rem;
+    background-color: #000000;
+    font-family: inconsolata;
+    text-align: center;
+    color: #e1ff02;
+    font-size: 5rem;
+    line-height: 7rem;
+    letter-spacing: 1.2rem;
+}
+
+.exp-details{
+    background-color: #780000;
+    color: white;
+    height: 44vh;
+    width: 25vw;
+    border-radius: 5%;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    padding: 2rem 1rem 0 1rem;
+    font-family: Montserrat;
+}
+
+#abt{
+    /* background-color: #780000; */
+    background: rgb(120,0,0);
+    background: linear-gradient(90deg, rgba(120,0,0,1) 20%, rgba(185,24,24,1) 100%, rgba(89,0,0,1) 100%); 
+    height: 95vh;
+    margin-top: 2rem;
+}
+.text-abt{
+    color: #02f840;
+    padding-top: 2rem;
+    font-family: inconsolata;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+
+#me{
+    border-radius: 0;
+    width: 18vw;
+    height: 50vh;
+    float: right;
+    margin-right: 1rem;
+    border-radius: 5%;
+    margin-top: 3rem;
+}
+
+#desc-abt{
+    width: 70vw;
+    color: white;
+    font-family: Montserrat;
+    margin: 2rem 0 0 3rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+#contact{
+    color: white;
+    background-color: #005771;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+#ct1{
+    text-align: center;
+    width: 45vw;
+    background-color: #262626;
+    float: left;
+}
+
+#ct2{
+    display: inline-block;
+    width: 60vw;
+    margin-left: 7rem;
+}
+
+textarea{
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.15rem solid white;
+    width: 20vw;
+    color: white;
+    height: 20vh;
+    font-family: inconsolata;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+input{
+    width: 20vw;
+    display: block;
+    height: 6vh;
+    border: none;
+    border-bottom: 0.15rem solid white;
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+
+input:active{
+    border: none;
+    box-shadow: none;
+}
+
+#mail{
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    height: 50vh;
+    width: 20vw;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder{
+    color: rgb(181, 181, 181); /* Change placeholder color to white */
+    font-size: 1.05rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 0.2rem solid #FFFF00;
+}
+
+label{
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    letter-spacing: 0.6rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: #FFFF00;
+}
+
+input{
+    font-family: inconsolata;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+#head-contact{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1.2rem;
+    word-spacing: 2rem;
+    margin-right: 1rem;
+    display: block;
+    color: #FFFF00;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.fa-brands{
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.fa-facebook-f{
+    color: #007bff;
+}
+
+.fa-x-twitter{
+    color: #000000;
+}
+
+.fa-linkedin-in{
+    color: #007bff;
+}
+
+.fa-instagram{
+    color: rgb(255, 111, 8);
+}
+
+#socials{
+    margin-bottom: 1rem;
+}
+#sub-btn{
+    margin-top: 2rem;
+    width: 20vw;
+    border: none;
+    height: 5vh;
+    background: rgb(255,86,57);
+    background: linear-gradient(90deg, rgba(255,86,57,1) 7%, rgba(173,42,42,1) 48%, rgba(179,0,0,0.5130427170868348) 100%);
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+
+/* Media Queries for Small Screens */
+
+/* General adjustment for devices with max-width 768px */
+@media (max-width: 768px) {
+    
+
+    .nav-head {
+        margin: 0.5em 0;
+        font-size: 1em;
+    }
+
+    .main-sec {
+        flex-direction: column;
+        height: 43vh;
+    }
+
+    #anime{
+        height: 20vh;
+        width: 38vw;
+
+    }
+
+    .intro{
+        width: 38vw;
+    }
+
+    .intro h1{
+        font-size: 1.5em;
+    }
+
+    .intro p{
+        font-size: 0.5em;
+    }
+
+    #random{
+        width: 100vw;
+    }
+
+    .about {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #me{
+        width: 50vw;
+        margin: 0;
+        height: 30vh;
+    }
+
+    .abt .text-abt{
+        font-size: 2.5em;
+    }
+
+    #desc-abt{
+        font-size: 1.2em;
+        width: 90%;
+    }
+
+    .edu-table {
+        font-size: 0.8em;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .bs-desc{
+        font-size: 2em;
+    }
+
+    .experience {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .exp-details {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #contact form {
+        width: 100%;
+        padding-left: 25%;
+    }
+
+    #ct1{
+        height: 50vh;
+    }
+
+    #mail{
+        height: 20vh;
+    }
+
+    #ct2{
+        margin-left: 0;
+    }
+
+
+    #ct2 label{
+        font-size: 1em;
+    }
+
+    #fname, #lname, #email, #message, #sub-btn{
+        width: 10em;
+    }
+
+}
+
+/* Specific adjustment for devices with max-width 480px */
+@media (max-width: 576px) {
+    nav {
+        padding: 0.5em;
+    }
+
+    .nav-head {
+        margin: 0.2em 0;
+        font-size: 0.9em;
+    }
+
+    .main-sec {
+        padding: 1em;
+    }
+
+    .main-sec img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        padding: 1em;
+    }
+
+    .text-abt{
+        font-size: 2.8em;
+    }
+
+    #desc-abt{
+        font-size: 0.9em;
+        margin-left: 1em;
+        margin-right: 0;
+        margin-top: 1em;
+    }
+
+    #me{
+        width: 30vw;
+        height: 40vh;
+        margin: 2em 0;
+        margin-left: 0.2em;
+    }
+
+
+    #edu-table{
+        font-size: 2.5em;
+        line-height: 4em;
+    }
+    .table{
+        line-height: 4em;
+        font-size: 0.7em;
+    }
+
+    #random{
+        width: 100vw;
+    }
+
+    #projs{
+        font-size: 3em;
+    }
+    .experience {
+        padding: 1em;
+    }
+
+    #text-exp{
+        font-size: 3em;
+    }
+
+    .exp-details {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    #ct1{
+        width: 100%;
+        
+    }
+
+    #contact{
+        padding: 0;
+    }
+
+    #head-contact{
+        font-size: 2em;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    #text-exp{
+        font-size: 2em;
+    }
+
+    #projs{
+        font-size: 2em;
+    }
+
+    .text-abt{
+        font-size: 2em;
+    }
+
+    .intro h1{
+        font-size: 1em;
+    }
+
+    #ct1{
+        height: 40vh;
+    }
+
+    #mail{
+        height: 20vh;
+    }
+
+    #ct2{
+        margin-left: 0;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    #ct2 label{
+        font-size: 1em;
+    }
+
+    #fname, #lname, #email, #message, #sub-btn{
+        width: 10em;
+    }
+}
+
