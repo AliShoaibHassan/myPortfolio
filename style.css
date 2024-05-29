@@ -497,6 +497,10 @@ input{
         width: 10em;
     }
 
+    #sub-btn{
+        margin-bottom: 1em;
+    }
+
 }
 
 /* Specific adjustment for devices with max-width 576px */
