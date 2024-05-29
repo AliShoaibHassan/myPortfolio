@@ -380,7 +380,7 @@ input{
 
 /* General adjustment for devices with max-width 768px */
 @media (max-width: 768px) {
-    
+
 
     .nav-head {
         margin: 0.5em 0;
@@ -395,6 +395,7 @@ input{
     #anime{
         height: 20vh;
         width: 38vw;
+        margin-bottom: 2em;
 
     }
 
@@ -612,12 +613,20 @@ input{
         font-size: 1em;
     }
 
+    #abt{
+        height: max-content;
+    }
+
     #exp{
-        height: 110vh;
+        height: max-content;
     }
 
     .bs-desc{
         font-size: 0.8em;
+    }
+
+    #desc-abt{
+        line-height: 1.8em;
     }
 
     p.bs-desc{
@@ -642,7 +651,7 @@ input{
     }
 
     #ct2 label{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     #fname, #lname, #email, #message, #sub-btn{
